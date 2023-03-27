@@ -1,0 +1,157 @@
+{
+  "_id": "rooftop",
+  "startUrl": [
+      "https://www.wongnai.com/businesses?regions=9681&categories=53&page.size=10&rerank=false&domain=1"
+  ],
+  "selectors": [
+      {
+          "id": "restaurant",
+          "multiple": true,
+          "parentSelectors": [
+              "_root",
+              "pagi"
+          ],
+          "selector": "a.sc-1rqxbqo-0",
+          "type": "SelectorElement"
+      },
+      {
+          "id": "link to restaurant",
+          "multiple": false,
+          "parentSelectors": [
+              "restaurant"
+          ],
+          "selector": "_parent_",
+          "type": "SelectorLink"
+      },
+      {
+          "id": "name",
+          "multiple": false,
+          "parentSelectors": [
+              "link to restaurant"
+          ],
+          "regex": "",
+          "selector": "span.bd36",
+          "type": "SelectorText"
+      },
+      {
+          "id": "phone_number",
+          "multiple": false,
+          "parentSelectors": [
+              "link to restaurant"
+          ],
+          "regex": "(?<=Call : \\s*)\\S.*\\S*(?=\\s*)",
+          "selector": ".clickable span.sc-18y57ed-0",
+          "type": "SelectorText"
+      },
+      {
+          "id": "number_of_seats",
+          "multiple": false,
+          "parentSelectors": [
+              "link to restaurant"
+          ],
+          "regex": "",
+          "selector": "div:nth-of-type(4) span.sc-1kh6w3g-1",
+          "type": "SelectorText"
+      },
+      {
+          "id": "district",
+          "multiple": false,
+          "parentSelectors": [
+              "link to restaurant"
+          ],
+          "regex": "",
+          "selector": "span.rg24",
+          "type": "SelectorText"
+      },
+      {
+          "id": "address",
+          "multiple": false,
+          "parentSelectors": [
+              "link to restaurant"
+          ],
+          "regex": "",
+          "selector": ".clickable div.rg14",
+          "type": "SelectorText"
+      },
+      {
+          "id": "city",
+          "multiple": false,
+          "parentSelectors": [
+              "link to restaurant"
+          ],
+          "regex": "(?<=in\\s*)\\S.*\\S*(?=\\s*)",
+          "selector": ".y259z-0 span",
+          "type": "SelectorText"
+      },
+      {
+          "id": "cuisine_type_1",
+          "multiple": false,
+          "parentSelectors": [
+              "link to restaurant"
+          ],
+          "regex": "",
+          "selector": "span.StyledText-sc-s63irq.rg16:nth-of-type(1)",
+          "type": "SelectorText"
+      },
+      {
+          "id": "cuisine_type_2",
+          "multiple": false,
+          "parentSelectors": [
+              "link to restaurant"
+          ],
+          "regex": "",
+          "selector": "span.hnLJSb:nth-of-type(2)",
+          "type": "SelectorText"
+      },
+      {
+          "id": "cuisine_type_3",
+          "multiple": false,
+          "parentSelectors": [
+              "link to restaurant"
+          ],
+          "regex": "",
+          "selector": "span.StyledText-sc-s63irq:nth-of-type(3)",
+          "type": "SelectorText"
+      },
+      {
+          "id": "rating",
+          "multiple": false,
+          "parentSelectors": [
+              "link to restaurant"
+          ],
+          "regex": "",
+          "selector": ".no92pk-1 div.Gap-sc-ilei7b",
+          "type": "SelectorText"
+      },
+      {
+          "id": "number of rating",
+          "multiple": false,
+          "parentSelectors": [
+              "link to restaurant"
+          ],
+          "regex": "",
+          "selector": ".rg16.text-gray-500 span:nth-of-type(1)",
+          "type": "SelectorText"
+      },
+      {
+          "id": "number of reviews",
+          "multiple": false,
+          "parentSelectors": [
+              "link to restaurant"
+          ],
+          "regex": "",
+          "selector": ".rg16.text-gray-500 span:nth-of-type(2)",
+          "type": "SelectorText"
+      },
+      {
+          "id": "pagi",
+          "paginationType": "linkFromHref",
+          "parentSelectors": [
+              "_root",
+              "pagi"
+          ],
+          "selector": ".aefy6t-0 a.hgwkbN",
+          "type": "SelectorPagination"
+      }
+  ]
+}
