@@ -1,1 +1,107 @@
-{"_id":"dimsum","startUrl":["https://www.wongnai.com/restaurants?categories=60&regions=9681&page.size=100&rerank=false&domain=1"],"selectors":[{"id":"restaurant","parentSelectors":["_root","pagi"],"type":"SelectorElement","selector":"a.sc-1rqxbqo-0","multiple":true},{"id":"link to restaurant","parentSelectors":["restaurant"],"type":"SelectorLink","selector":"_parent_","multiple":false},{"id":"name","parentSelectors":["link to restaurant"],"type":"SelectorText","selector":"span.bd36","multiple":false,"regex":""},{"id":"phone_number","parentSelectors":["link to restaurant"],"type":"SelectorText","selector":".clickable span.sc-18y57ed-0","multiple":false,"regex":"(?<=Call : \\s*)\\S.*\\S*(?=\\s*)"},{"id":"number_of_seats","parentSelectors":["link to restaurant"],"type":"SelectorText","selector":"div:nth-of-type(4) span.sc-1kh6w3g-1","multiple":false,"regex":""},{"id":"district","parentSelectors":["link to restaurant"],"type":"SelectorText","selector":"span.rg24","multiple":false,"regex":""},{"id":"address","parentSelectors":["link to restaurant"],"type":"SelectorText","selector":".clickable div.rg14","multiple":false,"regex":""},{"id":"city","parentSelectors":["link to restaurant"],"type":"SelectorText","selector":".y259z-0 span","multiple":false,"regex":"(?<=in\\s*)\\S.*\\S*(?=\\s*)"},{"id":"cuisine_type_1","parentSelectors":["link to restaurant"],"type":"SelectorText","selector":"span.StyledText-sc-s63irq.rg16:nth-of-type(1)","multiple":false,"regex":""},{"id":"cuisine_type_2","parentSelectors":["link to restaurant"],"type":"SelectorText","selector":"span.hnLJSb:nth-of-type(2)","multiple":false,"regex":""},{"id":"cuisine_type_3","parentSelectors":["link to restaurant"],"type":"SelectorText","selector":"span.StyledText-sc-s63irq:nth-of-type(3)","multiple":false,"regex":""},{"id":"rating","parentSelectors":["link to restaurant"],"type":"SelectorText","selector":".no92pk-1 div.Gap-sc-ilei7b","multiple":false,"regex":""},{"id":"number of rating","parentSelectors":["link to restaurant"],"type":"SelectorText","selector":".rg16.text-gray-500 span:nth-of-type(1)","multiple":false,"regex":""},{"id":"number of reviews","parentSelectors":["link to restaurant"],"type":"SelectorText","selector":".rg16.text-gray-500 span:nth-of-type(2)","multiple":false,"regex":""},{"id":"pagi","parentSelectors":["_root","pagi"],"paginationType":"linkFromHref","selector":".aefy6t-0 a.hgwkbN","type":"SelectorPagination"}]}
+{
+  "_id": "dimsum",
+  "startUrl": ["https://www.wongnai.com/restaurants?categories=60&regions=9681&page.size=100&rerank=false&domain=1"],
+  "selectors": [{
+    "id": "restaurant",
+    "parentSelectors": ["_root", "pagi"],
+    "type": "SelectorElement",
+    "selector": "a.sc-1rqxbqo-0",
+    "multiple": true
+  }, {
+    "id": "link to restaurant",
+    "parentSelectors": ["restaurant"],
+    "type": "SelectorLink",
+    "selector": "_parent_",
+    "multiple": false
+  }, {
+    "id": "name",
+    "parentSelectors": ["link to restaurant"],
+    "type": "SelectorText",
+    "selector": "span.bd36",
+    "multiple": false,
+    "regex": ""
+  }, {
+    "id": "phone_number",
+    "parentSelectors": ["link to restaurant"],
+    "type": "SelectorText",
+    "selector": ".clickable span.sc-18y57ed-0",
+    "multiple": false,
+    "regex": ""
+  }, {
+    "id": "number_of_seats",
+    "parentSelectors": ["link to restaurant"],
+    "type": "SelectorText",
+    "selector": "div:nth-of-type(4) span.sc-1kh6w3g-1",
+    "multiple": false,
+    "regex": ""
+  }, {
+    "id": "district",
+    "parentSelectors": ["link to restaurant"],
+    "type": "SelectorText",
+    "selector": "span.rg24",
+    "multiple": false,
+    "regex": ""
+  }, {
+    "id": "address",
+    "parentSelectors": ["link to restaurant"],
+    "type": "SelectorText",
+    "selector": ".clickable div.rg14",
+    "multiple": false,
+    "regex": ""
+  }, {
+    "id": "city",
+    "parentSelectors": ["link to restaurant"],
+    "type": "SelectorText",
+    "selector": ".y259z-0 span",
+    "multiple": false,
+    "regex": "(?<=in\\s*)\\S.*\\S*(?=\\s*)"
+  }, {
+    "id": "cuisine_type_1",
+    "parentSelectors": ["link to restaurant"],
+    "type": "SelectorText",
+    "selector": "span.StyledText-sc-s63irq.rg16:nth-of-type(1)",
+    "multiple": false,
+    "regex": ""
+  }, {
+    "id": "cuisine_type_2",
+    "parentSelectors": ["link to restaurant"],
+    "type": "SelectorText",
+    "selector": "span.hnLJSb:nth-of-type(2)",
+    "multiple": false,
+    "regex": ""
+  }, {
+    "id": "cuisine_type_3",
+    "parentSelectors": ["link to restaurant"],
+    "type": "SelectorText",
+    "selector": "span.StyledText-sc-s63irq:nth-of-type(3)",
+    "multiple": false,
+    "regex": ""
+  }, {
+    "id": "rating",
+    "parentSelectors": ["link to restaurant"],
+    "type": "SelectorText",
+    "selector": ".no92pk-1 div.Gap-sc-ilei7b",
+    "multiple": false,
+    "regex": ""
+  }, {
+    "id": "number of rating",
+    "parentSelectors": ["link to restaurant"],
+    "type": "SelectorText",
+    "selector": ".rg16.text-gray-500 span:nth-of-type(1)",
+    "multiple": false,
+    "regex": ""
+  }, {
+    "id": "number of reviews",
+    "parentSelectors": ["link to restaurant"],
+    "type": "SelectorText",
+    "selector": ".rg16.text-gray-500 span:nth-of-type(2)",
+    "multiple": false,
+    "regex": ""
+  }, {
+    "id": "pagi",
+    "parentSelectors": ["_root", "pagi"],
+    "paginationType": "linkFromHref",
+    "selector": ".aefy6t-0 a.hgwkbN",
+    "type": "SelectorPagination"
+  }]
+}
